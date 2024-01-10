@@ -7,6 +7,7 @@ import { LoginComponent } from './modules/auth/login/login.component';
 import { RegisterComponent } from './modules/auth/register/register.component';
 import { ResetPasswordComponent } from './modules/auth/reset-password/reset-password.component';
 import { HomeComponent } from './modules/site/home/home.component';
+import { ContactComponent } from './modules/site/contact/contact.component';
 
 
 const routes: Routes = [
@@ -20,9 +21,22 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     data: {
-      title: 'Home Page'
+      title: 'contact Page'
     }
   },
+
+  {
+    path: 'contact',
+    component: ContactComponent,
+    data: {
+      title: 'Contact Page'
+    }
+  },
+
+
+
+
+
 
 
 
@@ -119,6 +133,8 @@ const routes: Routes = [
   },
 
   {path: '**', redirectTo: 'admin/dashboard'}
+
+  
 ];
 
 @NgModule({
