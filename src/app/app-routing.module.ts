@@ -7,38 +7,16 @@ import { LoginComponent } from './modules/auth/login/login.component';
 import { RegisterComponent } from './modules/auth/register/register.component';
 import { ResetPasswordComponent } from './modules/auth/reset-password/reset-password.component';
 import { HomeComponent } from './modules/site/home/home.component';
-import { ContactComponent } from './modules/site/contact/contact.component';
+
 
 
 const routes: Routes = [
+
   // {
   //   path: '',
   //   redirectTo: 'login',
   //   pathMatch: 'full'
   // },
-
-  {
-    path: '',
-    component: HomeComponent,
-    data: {
-      title: 'contact Page'
-    }
-  },
-
-  {
-    path: 'contact',
-    component: ContactComponent,
-    data: {
-      title: 'Contact Page'
-    }
-  },
-
-
-
-
-
-
-
 
   {
     path: 'admin',
@@ -100,6 +78,7 @@ const routes: Routes = [
 
     ]
   },
+
   {
     path: 'login',
     // canActivate: [authGuard],
@@ -132,7 +111,16 @@ const routes: Routes = [
     }
   },
 
-  {path: '**', redirectTo: 'admin/dashboard'}
+  {
+    path: '',
+    component: HomeComponent,
+    data: {
+      title: 'Home Page'
+    }
+  },
+
+    {path: '**', redirectTo: ''},
+
 
   
 ];

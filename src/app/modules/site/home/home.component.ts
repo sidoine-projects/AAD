@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
+  templateUrl: 'home.component.html',
   styleUrls: [
-    './home.component.css',
+    'home.component.css',
 
     // '../../../../assets/style.css',
     // '../../../../assets/css/animate.min.css',

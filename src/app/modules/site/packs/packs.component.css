@@ -1,0 +1,10 @@
+li{
+    text-transform: none !important;
+}
+
+.separator {
+    height: 2px; /* Hauteur de la barre de séparation */
+    background-color: #ddd; /* Couleur de la barre de séparation */
+    margin: 10px 0; /* Marge pour espacement */
+  }
+

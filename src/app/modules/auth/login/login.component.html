@@ -1,12 +1,20 @@
 <div class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="javascript:void(0)"><b>Admin</b>LTE</a>
+    <!-- <a href="javascript:void(0)"><b>Admin</b>LTE</a> -->
+    <div class="logo">
+      <a href="index.html"
+        ><img
+          class="logoAAD" 
+          src="../../../../assets/img/logoAAD.png"
+          alt="Logo"
+      /></a>
+    </div>
   </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Se connecter à AAD</p>
 
       <form [formGroup]="loginForm" (ngSubmit)="onSingIn()">
         <div class="input-group mb-3">
@@ -18,7 +26,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" formControlName="password" class="form-control" placeholder="Password">
+          <input type="password" formControlName="password" class="form-control" placeholder="Mot de passe">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -30,34 +38,34 @@
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
               <label for="remember">
-                Remember Me
+                Se souvenir de moi
               </label>
             </div>
           </div>
           <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block" [disabled]="!loginForm.valid">Sign In</button>
+          <div class="col-4 p-0 text-center">
+            <button type="submit" class="btn btn-primary  text-center " [disabled]="!loginForm.valid">S'inscrire</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
 
       <div class="social-auth-links text-center mb-3">
-        <p>- OR -</p>
+        <p>- OU -</p>
         <a href="#" class="btn btn-block btn-primary">
-          <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+          <i class="fab fa-facebook mr-2"></i> S'inscrire avec Facebook
         </a>
         <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+          <i class="fab fa-google-plus mr-2"></i> S'inscrire avec Google+
         </a>
       </div>
       <!-- /.social-auth-links -->
 
       <p class="mb-1">
-        <a  (click)="moveToForgetPassword()">I forgot my password</a>
+        <a  (click)="moveToForgetPassword()">Mot de passe oublié ?</a>
       </p>
       <p class="mb-0">
-        <a href="javascript:void(0)" class="text-center">Register a new membership</a>
+        <a href="javascript:void(0)" class="text-center">S'inscrire comme un partenaire de AAD</a>
       </p>
     </div>
     <!-- /.login-card-body -->

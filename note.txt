@@ -1,0 +1,15 @@
+Image
+Ctrl +J
+glisser en dessous
+/meeting/a.jpg
+
+<span class="font-weight-bold"> </span> 
+<i class="icofont-shield"></i>
+
+
+pack
+service
+A propos
+Team
+connexion
+adhesion

@@ -52,7 +52,14 @@ body{
     font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 	font-size:14px;
-	color:#888;
+	/* color:#888; */
+	color:black;
+}
+p{
+	color: black;
+}
+h2,h4{
+	text-transform: none !important;
 }
 
 .pro-features {
@@ -1019,12 +1026,22 @@ body{
 .why-choose .choose-right{
 	height:100%;
 	width:100%;
-	background-image:url('img/video-bg.jpg');
+	background-image:url('img/a-propos/video-bg.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
 	position:relative;
 }
+.why-choose .choose-right-apropos{
+	height:100%;
+	width:100%;
+	background-image:url('img/a-propos/d.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	position:relative;
+}
+
 .why-choose .choose-right .video {
 	color: #fff;
 	height: 70px;
@@ -1041,6 +1058,8 @@ body{
 	background: rgb(30, 180, 230);
 	padding-left: 4px;
 }
+
+
 .why-choose .choose-right .video:hover{
 	transform:scale(1.1);
 }
@@ -1079,7 +1098,7 @@ body{
 	Start Call to action CSS
 =================================*/
 .call-action{
-	background-image:url('img/call-bg.jpg');
+	background-image:url('img/caller-assistance/caller-assistance.jpg');
 	background-size:cover;
 	background-position:center;
 	position:relative;
@@ -1476,7 +1495,7 @@ body{
 	border-radius: 3px;
 	margin: 0 0 0 -52px;
 	margin-top: 49px;
-	box-sizing: ;
+	/* box-sizing: ; */
 }
 .testimonials .owl-dots .owl-dot {
 	display: inline-block;
@@ -1630,11 +1649,13 @@ body{
 .pricing-table .single-table {
 	background: #fff;
 	border:1px solid #ddd;
+	border-radius: 10px !important;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
 	margin: 15px 0;
 	padding:45px 35px 30px 35px;
+	box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.2); /* Ajoutez cette ligne pour l'ombre */
 }
 /* Table Head */
 .pricing-table .single-table .table-head {
@@ -3714,7 +3735,7 @@ body{
 .about-image {
   width: 100%;
   height: 100%;
-  background-image: url(img/about-img.jpg);
+  background-image: url(img/a-propos/b.jpeg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3761,7 +3782,7 @@ body{
 	line-height: 25px;
 	text-align: center;
 	border-radius: 100%;
-	background-color: rgb(30, 180, 230)2B;
+	background-color: rgb(30, 180, 230);
 	color: rgb(30, 180, 230);
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
@@ -3883,7 +3904,8 @@ body{
 .our-mission-image {
   width: 100%;
   height: 100%;
-  background-image: url(img/mission-img.jpg);
+  /* background-image: url(img/mission-img.jpg); */
+  background-image: url(img/abiola.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
